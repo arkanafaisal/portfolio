@@ -25,17 +25,17 @@ export default function HeroSection(){
         </div>
         <div id='badge-container' className='h-fit animate-moveY mr-40 grid grid-cols-3 gap-3 shrink-0'>
             <NestJS title='NestJs (proficient)' className='text-red-600 w-15 h-15 hover:w-17 hover:h-17 border-green-500 hover:border-b-3 rounded-xl m-1 hover:m-0 transition-size duration-200 linear'></NestJS>
-            <Express title='ExpressJs (experienced)' className='text-white w-15 h-15 hover:w-17 hover:h-17 border-red-500 hover:border-b-3 rounded-xl m-1 hover:m-0 transition-size duration-200 linear'></Express>
+            <Express title='ExpressJs (beginner)' className='text-white w-15 h-15 hover:w-17 hover:h-17 border-red-500 hover:border-b-3 rounded-xl m-1 hover:m-0 transition-size duration-200 linear'></Express>
             <div className='border-yellow-500 hover:border-b-3 rounded-xl transition-size duration-200 linear'>
-                <div className='bg-white/90 rounded-full w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 transition-size duration-200 linear'><NextJS title='NextJs (skilled)' className='w-15 h-15 hover:w-17 hover:h-17 text-black transition-size duration-200 linear'></NextJS></div>
+                <div className='bg-white/90 rounded-full w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 transition-size duration-200 linear'><NextJS title='NextJs (intermediate)' className='w-15 h-15 hover:w-17 hover:h-17 text-black transition-size duration-200 linear'></NextJS></div>
             </div>
-            <Vite title='Vite (skilled)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl transition-size duration-200 linear'></Vite>
-            <PostgreSQL title='Postgres (experienced)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-red-500 hover:border-b-3 rounded-xl fill-blue-500 transition-size duration-200 linear'></PostgreSQL>
-            <MongoDb title='MongoDB (experienced)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-red-500 hover:border-b-3 rounded-xl text-green-600 transition-size duration-200 linear'></MongoDb>
-            <TypeScript title='Typescript (skilled)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-blue-500 transition-size duration-200 linear'></TypeScript>
-            <React title='React (skilled)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-blue-500 transition-size duration-200 linear'></React>
+            <Vite title='Vite (intermediate)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl transition-size duration-200 linear'></Vite>
+            <PostgreSQL title='Postgres (beginner)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-red-500 hover:border-b-3 rounded-xl fill-blue-500 transition-size duration-200 linear'></PostgreSQL>
+            <MongoDb title='MongoDB (beginner)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-red-500 hover:border-b-3 rounded-xl text-green-700 transition-size duration-200 linear'></MongoDb>
+            <TypeScript title='Typescript (intermediate)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-blue-500 transition-size duration-200 linear'></TypeScript>
+            <React title='React (intermediate)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-blue-500 transition-size duration-200 linear'></React>
             <TailwindCss title='TailwindCSS (proficient)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-green-500 hover:border-b-3 rounded-xl text-blue-500 transition-size duration-200 linear'></TailwindCss>
-            <Git title='Git (skilled)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-red-500 transition-size duration-200 linear'></Git>
+            <Git title='Git (intermediate)' className='w-15 h-15 hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl text-red-500 transition-size duration-200 linear'></Git>
             <B2 title='B2 english CEFR' className='w-15 h-15 cursor-default hover:w-17 hover:h-17 m-1 hover:m-0 border-yellow-500 hover:border-b-3 rounded-xl transition-size duration-200 linear'></B2>
         </div>
     </section>

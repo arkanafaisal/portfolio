@@ -17,17 +17,17 @@ export default function ProjectListSection(){
             </li>
 
             <li className="flex gap-10 h-10">
-                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="">Vocab Quiz</a>
+                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="#vocab-detail">Vocab Quiz</a>
                 <h2>[20 May - 24 June]</h2>
                 <div className="h-10 flex gap-2 ml-auto">
                     <Express title="Express" className="w-10 h-10"></Express>
-                    <MongoDb title="MongoDB Atlas" className="w-10 h-10 text-green-600"></MongoDb>
+                    <MongoDb title="MongoDB Atlas" className="w-10 h-10 text-green-700"></MongoDb>
                     <VanillaJs title="VanillaJs" className="w-10 h-10 text-yellow-500"></VanillaJs>
                 </div>
             </li>
 
             <li className="flex gap-10 h-10">
-                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="">Portfolio</a>
+                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="portfolio-detail">Portfolio</a>
                 <h2>[12 September - 20 September]</h2>
                 <div className="h-10 flex gap-2 ml-auto">
                     <Vite title="Vite" className="w-10 h-10"></Vite>
@@ -36,7 +36,7 @@ export default function ProjectListSection(){
             </li>
 
             <li className="flex gap-10 h-10">
-                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="">Food Menu</a>
+                <a className="hover:text-white hover:text-3xl transition-color transition-size duration-200 ease-in" href="food-menu-detail">Food Menu</a>
                 <h2>[18 July - 1 August]</h2>
                 <div className="h-10 flex gap-2 ml-auto">
                     <GSheets className="w-10 h-10 text-green-600"></GSheets>
