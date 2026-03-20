@@ -1,0 +1,53 @@
+/* {/DESIGN_SYSTEM={"primary":"var(--primary)","secondary":"var(--surface)","radius":"rounded-xl","shadow":"shadow-md","spacing":"balanced","font":"sans","tone":"neutral","darkMode":true}__/} */
+@import "tailwindcss";
+
+@theme {
+  /* Menyambungkan variabel root ke utilitas Tailwind */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-content: var(--primary-content);
+  
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-nav: var(--surface-nav);
+  
+  --color-content: var(--content);
+  --color-content-muted: var(--content-muted);
+  
+  --color-border: var(--border);
+}
+
+/* Palet Mode Terang (Light Mode) */
+:root {
+  --primary: #2563eb;       
+  --primary-hover: #1d4ed8; 
+  --primary-content: #ffffff;
+  
+  --background: #f8fafc;       
+  --surface: #ffffff;       
+  --surface-nav: rgba(255, 255, 255, 0.8);
+  
+  --content: #0f172a;     
+  --content-muted: #475569;    
+  
+  --border: #e2e8f0;        
+}
+
+/* Palet Mode Gelap (Dark Mode) */
+.dark {
+  --primary: #3b82f6;       
+  --primary-hover: #60a5fa; 
+  --primary-content: #ffffff;
+  
+  --background: #0f172a;       
+  --surface: #1e293b;       
+  --surface-nav: rgba(15, 23, 42, 0.8);
+  
+  --content: #f8fafc;     
+  --content-muted: #94a3b8;    
+  
+  --border: #334155;        
+}
+
+/* Mengaktifkan dark mode berbasis class untuk Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
