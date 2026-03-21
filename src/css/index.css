@@ -51,3 +51,18 @@
 
 /* Mengaktifkan dark mode berbasis class untuk Tailwind v4 */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================
+   Global Utilities
+   ========================================= */
+
+/* Mematikan visual scrollbar global tapi tetap bisa di-scroll dan menambahkan efek gulir mulus (smooth scroll) */
+html, body {
+  scroll-behavior: smooth;  /* Menambahkan transisi gulir yang mulus saat anchor link diklik */
+  -ms-overflow-style: none; /* Untuk Internet Explorer dan Edge */
+  scrollbar-width: none;    /* Untuk Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;            /* Untuk Chrome, Safari, dan Opera */
+}

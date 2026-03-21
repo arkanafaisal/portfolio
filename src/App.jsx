@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import FeaturedProjectsSection from './components/FeaturedProjectsSection';
 
 export default function App() {
     const [isDark, setIsDark] = useState(false);
@@ -32,6 +33,7 @@ export default function App() {
         <main className="min-h-screen bg-background font-sans text-content transition-colors duration-300">
             <Navbar isDark={isDark} toggleTheme={toggleTheme} />
             <HeroSection />
+            <FeaturedProjectsSection />
         </main>
     );
 }
