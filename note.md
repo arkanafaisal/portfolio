@@ -7,6 +7,7 @@ ideas:
 - reduce blank space
 - dimension
 - grouping pattern
+- hero section (after removing navbar)
 
 
 
