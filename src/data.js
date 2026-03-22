@@ -87,5 +87,47 @@ export const portfolioData = {
             database: ["PostgreSQL", "MySQL", "Redis"],
             devopsAndTools: ["VPS (Ubuntu)", "Nginx", "Git & GitHub"]
         }
+    },
+    // Tambahkan di bagian paling bawah objek portfolioData sebelum tutup kurung kurawal
+    otherProjectsSection: {
+        title: "Other Explorations",
+        projects: [
+            {
+                id: 1, 
+                year: 2026,
+                title: "KasirLite - POS UMKM",
+                description: "Sistem kasir ringan berbasis web untuk kedai kopi lokal.",
+                techStack: ["React", "Tailwind CSS", "Firebase"],
+                links: {
+                    github: "https://github.com/username/kasirlite",
+                    live: "https://kasirlite.vercel.app"
+                },
+                thumbnailUrl: "https://picsum.photos/seed/kasirlite/600/400" // Placeholder
+            },
+            {
+                id: 2,
+                year: 2025,
+                title: "Weather.io Dashboard",
+                description: "Eksplorasi API cuaca publik dengan animasi transisi dinamis.",
+                techStack: ["Vue.js", "OpenWeather API", "Framer Motion"],
+                links: {
+                    github: "https://github.com/username/weatherio",
+                    live: "https://weatherio.netlify.app"
+                },
+                thumbnailUrl: "https://picsum.photos/seed/weatherio/600/400" // Placeholder
+            },
+            {
+                id: 3,
+                year: 2024,
+                title: "Minimalist Dev Blog",
+                description: "Tema blog statis dan super cepat dari file Markdown.",
+                techStack: ["Next.js", "MDX", "CSS Modules"],
+                links: {
+                    github: "https://github.com/username/dev-blog",
+                    live: "" 
+                },
+                thumbnailUrl: "https://picsum.photos/seed/devblog/600/400" // Placeholder
+            }
+        ]
     }
 };
