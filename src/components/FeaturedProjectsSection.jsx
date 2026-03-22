@@ -3,18 +3,15 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MoveHorizontal } from 'lucide-react';
 import { portfolioData } from '../data';
 
-// Jalur impor diperbarui mengarah ke folder subComponents
 import ProjectCard from './subComponents/ProjectCard';
 import ProjectDetails from './subComponents/ProjectDetails';
-
+import SectionHeader from './common/SectionHeader'; // Import komponen global
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function FeaturedProjectsSection() {
     const { featuredProjects } = portfolioData;
     
-    // Nilai awal null agar tidak auto-scroll saat pertama kali load
     const [selectedProject, setSelectedProject] = useState(null);
-    
     const detailsRef = useRef(null);
     const [sectionRef, isVisible] = useScrollAnimation({ threshold: 0.1 });
 
@@ -40,9 +37,13 @@ export default function FeaturedProjectsSection() {
                 
                 {/* Section Header */}
                 <div className="flex-none flex flex-col md:flex-row md:items-end justify-between gap-1 md:gap-4 mb-1 md:mb-4 overflow-hidden md:overflow-visible">
-                    <h3 className={`text-3xl sm:text-4xl font-bold text-content tracking-tight leading-none transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        Featured Projects
-                    </h3>
+                    
+                    {/* Implementasi komponen header dengan mb-0 agar tidak merusak layout padat */}
+                    <SectionHeader 
+                        title="Featured Projects" 
+                        isVisible={isVisible} 
+                        className="mb-0" 
+                    />
                     
                     <div className={`transition-all duration-700 delay-300 ease-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                         <div className="flex items-center gap-1.5 text-content-muted text-[11px] sm:text-sm font-medium lg:hidden animate-pulse pb-0.5">

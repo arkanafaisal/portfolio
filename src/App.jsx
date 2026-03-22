@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import FeaturedProjectsSection from './components/FeaturedProjectsSection';
 import ServicesSection from './components/ServicesSection';
+import TechStackSection from './components/TechStackSection';
 
 export default function App() {
     const [isDark, setIsDark] = useState(false);
@@ -36,6 +37,7 @@ export default function App() {
             <HeroSection />
             <FeaturedProjectsSection />
             <ServicesSection/>
+            <TechStackSection/>
         </main>
     );
 }

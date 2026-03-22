@@ -78,5 +78,14 @@ export const portfolioData = {
                 icon: Database
             }
         ]
+    },
+    techStackSection: {
+        title: "Technologies & Tools",
+        categories: {
+            frontend: ["React", "Vite", "Tailwind CSS"],
+            backend: ["Node.js", "Express", "Socket.io"],
+            database: ["PostgreSQL", "MySQL", "Redis"],
+            devopsAndTools: ["VPS (Ubuntu)", "Nginx", "Git & GitHub"]
+        }
     }
 };
