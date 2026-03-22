@@ -1,6 +1,5 @@
 /* {/DESIGN_SYSTEM={"primary":"var(--primary)","secondary":"var(--surface)","radius":"rounded-xl","shadow":"shadow-md","spacing":"balanced","font":"sans","tone":"neutral","darkMode":true}__/} */
-import { AppWindow, MonitorSmartphone, Database } from 'lucide-react';
-
+import { AppWindow, MonitorSmartphone, Database, Mail, Linkedin, Github, MessageCircle, Instagram } from 'lucide-react';
 
 export const portfolioData = {
     personal: {
@@ -14,13 +13,13 @@ export const portfolioData = {
         primary: "Explore My Projects",
         secondary: "Download CV"
     },
-    socials: {
-        email: "#email",
-        linkedin: "#linkedin",
-        github: "#github",
-        whatsapp: "#whatsapp",
-        instagram: "#instagram"
-    },
+    socials: [
+        { id: "email", url: "#email", icon: Mail, label: "Email" },
+        { id: "linkedin", url: "#linkedin", icon: Linkedin, label: "LinkedIn" },
+        { id: "github", url: "#github", icon: Github, label: "GitHub" },
+        { id: "whatsapp", url: "#whatsapp", icon: MessageCircle, label: "WhatsApp" },
+        { id: "instagram", url: "#instagram", icon: Instagram, label: "Instagram" }
+    ],
     featuredProjects: [
         {
             id: "secretly",
@@ -88,7 +87,6 @@ export const portfolioData = {
             devopsAndTools: ["VPS (Ubuntu)", "Nginx", "Git & GitHub"]
         }
     },
-    // Tambahkan di bagian paling bawah objek portfolioData sebelum tutup kurung kurawal
     otherProjectsSection: {
         title: "Other Explorations",
         projects: [
@@ -129,5 +127,45 @@ export const portfolioData = {
                 thumbnailUrl: "https://picsum.photos/seed/devblog/600/400" // Placeholder
             }
         ]
+    },
+    contactData: {
+        preTitle: "What's Next?",
+        title: "Get In Touch",
+        button: {
+            label: "Say Hello 👋",
+            email: "hello@yourdomain.com", // Ganti dengan email asli Anda nanti
+            subject: "Reaching out via your portfolio 👋",
+            body: "Hi! I came across your website and really enjoyed looking through your work. I'm reaching out because I'd love to discuss a potential [job opportunity / freelance project / collaboration]. Let me know when you have some time to chat!"
+        }
     }
+    // contactData: {
+    //     preTitle: "What's Next?",
+    //     title: "Get In Touch",
+    //     button: {
+    //         label: "Say Hello 👋",
+    //         email: "hello@yourdomain.com", // Ganti dengan email aslimu
+    //         subject: "Reaching out via your portfolio 👋",
+    //         body: "Hi! I came across your website and really enjoyed looking through your work. I'm reaching out because I'd love to discuss a potential [job opportunity / freelance project / collaboration]. Let me know when you have some time to chat!"
+    //     },
+    //     socials: [
+    //         {
+    //         id: "soc-1",
+    //         platform: "GitHub",
+    //         url: "https://github.com/username",
+    //         icon: "github-icon"
+    //         },
+    //         {
+    //         id: "soc-2",
+    //         platform: "LinkedIn",
+    //         url: "https://linkedin.com/in/username",
+    //         icon: "linkedin-icon"
+    //         },
+    //         {
+    //         id: "soc-3",
+    //         platform: "Twitter",
+    //         url: "https://twitter.com/username",
+    //         icon: "twitter-icon"
+    //         }
+    //     ],
+    // }
 };
