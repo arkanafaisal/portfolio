@@ -7,6 +7,7 @@ import ServicesSection from './components/ServicesSection';
 import TechStackSection from './components/TechStackSection';
 import OtherProjectsSection from './components/OtherProjectsSection';
 import ContactSection from './components/ContactSection';
+import FooterSection from './components/FooterSection';
 
 export default function App() {
     const [isDark, setIsDark] = useState(false);
@@ -42,6 +43,7 @@ export default function App() {
             <TechStackSection/>
             <OtherProjectsSection/>
             <ContactSection/>
+            <FooterSection/>
         </main>
     );
 }

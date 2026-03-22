@@ -23,7 +23,8 @@
   --primary-hover: #1d4ed8; 
   --primary-content: #ffffff;
   
-  --background: #f8fafc;       
+  /* Background diubah dari #f8fafc menjadi #f1f5f9 (slate-100) agar surface putih lebih terlihat */
+  --background: #f1f5f9;       
   --surface: #ffffff;       
   --surface-nav: rgba(255, 255, 255, 0.8);
   
