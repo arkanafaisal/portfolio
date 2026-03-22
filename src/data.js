@@ -1,4 +1,6 @@
 /* {/DESIGN_SYSTEM={"primary":"var(--primary)","secondary":"var(--surface)","radius":"rounded-xl","shadow":"shadow-md","spacing":"balanced","font":"sans","tone":"neutral","darkMode":true}__/} */
+import { AppWindow, MonitorSmartphone, Database } from 'lucide-react';
+
 
 export const portfolioData = {
     personal: {
@@ -53,5 +55,28 @@ export const portfolioData = {
             liveUrl: "#",
             githubUrl: "#"
         }
-    ]
+    ], 
+    servicesSection: {
+        title: "What I Do",
+        services: [
+            {
+                id: 1,
+                serviceName: "End-to-End Web Development",
+                description: "Building complete web applications from the ground up, seamlessly connecting the frontend user experience with reliable backend logic.",
+                icon: AppWindow // Referensi komponen murni, tanpa kurung siku <>
+            },
+            {
+                id: 2,
+                serviceName: "Responsive Web Design",
+                description: "Crafting fluid, interactive user interfaces that look fantastic and function perfectly across all devices and screen sizes.",
+                icon: MonitorSmartphone
+            },
+            {
+                id: 3,
+                serviceName: "Backend & Database Setup",
+                description: "Designing structured databases and developing custom APIs specifically tailored to power dynamic frontend features.",
+                icon: Database
+            }
+        ]
+    }
 };

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import FeaturedProjectsSection from './components/FeaturedProjectsSection';
+import ServicesSection from './components/ServicesSection';
 
 export default function App() {
     const [isDark, setIsDark] = useState(false);
@@ -34,6 +35,7 @@ export default function App() {
             <Navbar isDark={isDark} toggleTheme={toggleTheme} />
             <HeroSection />
             <FeaturedProjectsSection />
+            <ServicesSection/>
         </main>
     );
 }

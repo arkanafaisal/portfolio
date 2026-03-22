@@ -1,14 +1,18 @@
+/* {/DESIGN_SYSTEM={"primary":"var(--primary)","secondary":"var(--surface)","radius":"rounded-xl","shadow":"shadow-md","spacing":"balanced","font":"sans","tone":"neutral","darkMode":true}__/} */
 import React, { useState, useRef, useEffect } from 'react';
 import { MoveHorizontal } from 'lucide-react';
 import { portfolioData } from '../data';
-import ProjectCard from './featuredProjectsSection/ProjectCard';
-import ProjectDetails from './featuredProjectsSection/ProjectDetails';
+
+// Jalur impor diperbarui mengarah ke folder subComponents
+import ProjectCard from './subComponents/ProjectCard';
+import ProjectDetails from './subComponents/ProjectDetails';
+
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function FeaturedProjectsSection() {
     const { featuredProjects } = portfolioData;
     
-    // Nilai awal diubah dari featuredProjects[0] menjadi null
+    // Nilai awal null agar tidak auto-scroll saat pertama kali load
     const [selectedProject, setSelectedProject] = useState(null);
     
     const detailsRef = useRef(null);
