@@ -41,6 +41,7 @@ export default function App() {
             <FeaturedProjectsSection />
             <ServicesSection/>
             <TechStackSection/>
+            <OtherProjectsSection/>
             <ContactSection/>
             <FooterSection/>
         </main>

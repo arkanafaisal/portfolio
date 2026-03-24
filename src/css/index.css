@@ -18,12 +18,12 @@
 }
 
 /* Palet Mode Terang (Light Mode) */
+/* Palet Mode Terang (Light Mode) */
 :root {
-  --primary: #2563eb;       
-  --primary-hover: #1d4ed8; 
-  --primary-content: #ffffff;
+  --primary: #171717;       /* Hitam pekat (Neutral 900) untuk kesan elegan */
+  --primary-hover: #404040; /* Abu-abu gelap saat kursor mendekat */
+  --primary-content: #ffffff; /* Teks di dalam tombol hitam wajib putih */
   
-  /* Background diubah dari #f8fafc menjadi #f1f5f9 (slate-100) agar surface putih lebih terlihat */
   --background: #f1f5f9;       
   --surface: #ffffff;       
   --surface-nav: rgba(255, 255, 255, 0.8);
@@ -36,9 +36,9 @@
 
 /* Palet Mode Gelap (Dark Mode) */
 .dark {
-  --primary: #3b82f6;       
-  --primary-hover: #60a5fa; 
-  --primary-content: #ffffff;
+  --primary: #f8fafc;       /* Putih bersih/pucat agar sangat kontras dengan background gelap */
+  --primary-hover: #cbd5e1; /* Abu-abu terang saat kursor mendekat */
+  --primary-content: #0f172a; /* Teks di dalam tombol putih diubah menjadi gelap pekat */
   
   --background: #0f172a;       
   --surface: #1e293b;       
